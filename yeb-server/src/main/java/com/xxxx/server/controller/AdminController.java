@@ -59,7 +59,9 @@ public class AdminController {
     @PutMapping("/")
     public RespBean updateAdmin(@RequestBody Admin admin){
         if(adminService.updateById(admin)){
+            System.out.println("dfs");
             return RespBean.success("更新成功");
+
         }
         return RespBean.error("更新失败");
     }
