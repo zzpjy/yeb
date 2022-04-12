@@ -36,8 +36,6 @@ public class AdminController {
     @ApiOperation("获取所有操作员")
     @GetMapping("/")
     public List<Admin> getAllAdmins(String keywords){
-        System.out.println("ehrtnryj");
-        System.out.println("fseger");
         return adminService.getAllAdmins(keywords);
     }
 
@@ -59,8 +57,6 @@ public class AdminController {
     @PutMapping("/")
     public RespBean updateAdmin(@RequestBody Admin admin){
         if(adminService.updateById(admin)){
-            System.out.println("dfs");
-            System.out.println("dfegwg");
             return RespBean.success("更新成功");
 
         }
