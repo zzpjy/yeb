@@ -37,6 +37,7 @@ public class AdminController {
     @GetMapping("/")
     public List<Admin> getAllAdmins(String keywords){
         System.out.println("ehrtnryj");
+        System.out.println("fseger");
         return adminService.getAllAdmins(keywords);
     }
 
