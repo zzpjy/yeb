@@ -36,6 +36,7 @@ public class AdminController {
     @ApiOperation("获取所有操作员")
     @GetMapping("/")
     public List<Admin> getAllAdmins(String keywords){
+        System.out.println("ehrtnryj");
         return adminService.getAllAdmins(keywords);
     }
 
