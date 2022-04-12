@@ -60,6 +60,7 @@ public class AdminController {
     public RespBean updateAdmin(@RequestBody Admin admin){
         if(adminService.updateById(admin)){
             System.out.println("dfs");
+            System.out.println("dfegwg");
             return RespBean.success("更新成功");
 
         }
